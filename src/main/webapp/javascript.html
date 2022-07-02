@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+            <div class="container texto">
+                <h2>JavaScript</h2>
+                <p>Según Flanagan (2007), JavaScript es el lenguaje interpretado más utilizado, principalmente en la construcción de páginas Web, con una sintaxis muy semejante a Java y a C. Técnicamente, JavaScript es un lenguaje de programación interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios (Pérez, 2008). Es similar que PHP, aunque posee diferencias notables como, por ejemplo, los procesos de JavaScript se ejecutan del lado del cliente (en el navegador), y por tanto no implican intercambio de datos con el servidor.</p>
+                <h4>Cómo incluir JavaScript en documentos XHTML</h4>
+                <p><strong>Incluir JavaScript en el mismo documento XHTML</strong></p>
+                <p>El código JavaScript se encierra entre etiquetas &lt;script&gt; y se incluye en cualquier parte del documento. Aunque es correcto incluir cualquier bloque de código en cualquier zona de la página, se recomienda definir el código JavaScript dentro de la cabecera del documento (dentro de la etiqueta <head>).
+                    Para que la página XHTML resultante sea válida, es necesario añadir el atributo type a la etiqueta &lt;script&gt;. Los valores que se incluyen en el atributo type están estandarizados y para el caso de JavaScript, el valor correcto es text/javascript. Ejemplo:
+                    </p>
+                <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+                    xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                </p>
+                <p>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;</p>
+                <p>&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;</p>
+                <p>&lt;script type="text/javascript"&gt;</p>
+                <p>alert("Un mensaje de prueba");</p>
+                <p>&lt;/script&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;p&gt;Un párrafo de texto.&lt;/p&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+                <p></p>
+                <h4>Definir JavaScript en un archivo externo</h4>
+                <p>Las instrucciones JavaScript se pueden incluir en un archivo externo de tipo JavaScript que los documentos XHTML enlazan mediante la etiqueta &lt;script&gt;. Se pueden crear todos los archivos JavaScript que sean necesarios y cada documento XHTML puede enlazar tantos archivos JavaScript como necesite.
+                    Ejemplo:
+                </p>
+                <p>
+                    <strong>Archivo codigo.js</strong></p>
+                <p>alert("Un mensaje de prueba");</p>
+                <p><strong>Documento XHTML</strong></p>
+                <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+                    xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+                </p>
+                <p>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;</p>
+                <p>&lt;title&gt;Ejemplo de código JavaScript en el propio documento&lt;/title&gt;</p>
+                <p>&lt;script type="text/javascript" src="/js/codigo.js">&lt;/script&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;p&gt;Un párrafo de texto.&lt;/p&gt;</p>
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+                <p>Además del atributo type, este método requiere definir el atributo src, que es el que indica la
+                    URL correspondiente al archivo JavaScript que se quiere enlazar. Cada etiqueta &lt;script&gt; solamente puede enlazar un único archivo, pero en una misma página se pueden incluir tantas etiquetas &lt;script&gt; como sean necesarias
+                </p>
+            </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>

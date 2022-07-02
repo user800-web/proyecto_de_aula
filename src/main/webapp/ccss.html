@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+        <div class="container texto">
+            <h2>CSS</h2>
+            <p>Según Flanagan (2007), JavaScript es el lenguaje interpretado más utilizado, principalmente en la construcción de páginas Web, con una sintaxis muy semejante a Java y a C. Técnicamente, JavaScript es un lenguaje de programación interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios (Pérez, 2008). Es similar que PHP, aunque posee diferencias notables como, por ejemplo, los procesos de JavaScript se ejecutan del lado del cliente (en el navegador), y por tanto no implican intercambio de datos con el servidor.</p>
+            <h3>Incluir CSS en el mismo documento HTML</h3>
+            <p>Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta&lt;style&gt; de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección &lt;head&gt;). Ejemplo:
+            </p>
+            <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+            </p>
+            <p>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</p>
+            <p>&lt;head&gt;</p>
+            <p>&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;</p>
+            <p>&lt;title&gt;Ejemplo de estilos CSS en el propio documento&lt;/title&gt;</p>
+            <p>&lt;style type="text/css"&gt;</p>
+            <p>p { color: black; font-family: Verdana; }</p>
+            <p>&lt;/style&gt;</p>
+            <p>&lt;/head&gt;</p>
+            <p>&lt;body&gt;</p>
+            <p>&lt;p&gt;Un párrafo de texto.&lt;/p&gt;</p>
+            <p>&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p>
+            <h3>Definir CSS en un archivo externo</h3>
+            <p>En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <link>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
+                Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguirlos siguientes pasos:
+            </p>
+            <ol>
+                <li>Se crea un archivo de texto y se le añade solamente el siguiente contenido:
+                    p { color: black; font-family: Verdana; }
+                </li>
+                <li>Se guarda el archivo de texto con el nombre estilos.css Se debe poner especial atención a que el archivo tenga extensión .css y no .txt</li>
+                <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta &lt;link&gt;</li>
+            </ol>
+            <p>Normalmente, la etiqueta &lt;link&gt; incluye cuatro atributos cuando se enlaza un archivo CSS:</p>
+            <ul>
+                <li><b>rel: </b>indica el tipo de relación que tiene el recurso enlazado (en este caso, el archivo CSS) y
+                    la página HTML. Para los archivos CSS, siempre se utiliza el valor stylesheet
+                </li>
+                <li><b>type: </b>indica el tipo de recurso enlazado. Sus valores están estandarizados y para los archivos CSS su valor siempre es text/css</li>
+                <li><b>href: </b>indica la URL del archivo CSS que contiene los estilos. La URL indicada puede ser relativa o absoluta y puede apuntar a un recurso interno o externo al sitio web.</li>
+                <li><b>media: </b>indica el medio en el que se van a aplicar los estilos del archivo CSS</li>
+            </ul>
+        </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>

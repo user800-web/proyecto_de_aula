@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+        <div class="container texto">
+            <h2>Bootstrap</h2>
+            <p>Bootstrap es un potente conjunto de herramientas de front-end repleto de funciones.</p>
+            <h4>Incluir Bootstrap a proyecto HTML</h4>
+            <ol>
+                <li>Incluya la etiqueta &lt;meta name="viewport&gt; en el archivo index.html de la raíz de su proyecto para un comportamiento receptivo adecuado en los dispositivos móviles.</li>
+                <li>Incluya CSS y JS de Bootstrap. Coloque la etiqueta &lt;link&gt; en el &lt;head&gt;para nuestro CSS y la etiqueta &lt;script&gt; para nuestro paquete de JavaScript antes del cierre &lt;/body&gt;</li>
+            </ol>            
+            <h4>Ejemplo:</h4>                
+            <p>&lt;!doctype html&gt;</p>
+            <p>&lt;html lang="en"&gt;</p>
+            <p>&lt;head&gt;</p>
+            <p>&lt;meta charset="utf-8"&gt;</p>
+            <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+            <p>&lt;title&gt;Bootstrap demo&lt;/title&gt;</p>
+            <p>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" </p>
+            <p>rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"&gt;
+            </p>
+            <p>&lt;/head&gt;</p>
+            <p>&lt;body&gt;</p>
+            <p>&lt;h1>Hello, world!&lt;/h1></p>
+            <p>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"</p>
+            <p>integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">&lt;/script&gt;</p>
+            <p>&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p>
+        </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>

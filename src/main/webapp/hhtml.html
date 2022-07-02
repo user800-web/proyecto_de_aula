@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+        <div class="container texto">
+            <h2>HTML</h2>           
+            <p><a href="https://www.3ciencias.com/wp-content/uploads/2018/09/Art_2.pdf">HTML</a>, es un lenguaje de marcado de hipertexto (por sus siglas en inglés HyperText Markup Language), y se emplea para el desarrollo de aplicaciones Web. Cabe recalcar que no se trata de un lenguaje de programación puesto que no contiene funciones aritméticas, estructuras de control, entre otras características de un lenguaje de programación. HTML genera aplicaciones Web estáticas, aunque en conjunto con diferentes lenguajes de programación se puede crear aplicaciones dinámicas.</p>
+            <h3>Estructura: </h3>
+            <p><strong>&lt;!DOCTYPE&gt;</strong></p>
+            <p>Indica el tipo de documento que estamos creando. Esto en HTML5 es extremadamente sencillo:</p>
+            <p>&lt;!DOCTYPE html&gt;</p>
+            <p><b>IMPORTANTE: </b>Esta línea debe ser la primera línea del archivo, sin espacios o
+                líneas que la precedan. De esta forma, el modo estándar del navegador es
+                activado y las incorporaciones de HTML5 son interpretadas siempre que sea
+                posible, o ignoradas en caso contrario.</p>
+            <p><strong>&lt;html&gt;</strong></p>
+            <p>Luego de declarar el tipo de documento, debemos comenzar a construir la estructura HTML. Como siempre, la estructura tipo árbol de este lenguaje tiene su raíz en el elemento. Este elemento envolverá al resto del código:</p>
+            <p>&lt;!DOCTYPE html&gt;</p>
+            <p>&lt;html lang=”es”&gt;</p>
+            <p>&lt;/html&gt;</p>
+            <p><strong>&lt;head&gt;</strong></p>
+            <p>El código HTML insertado entre las etiquetas &lt;html&gt; tiene que ser dividido entre dos secciones principales. Al igual que en versiones previas de HTML, la primera sección es la cabecera y la segunda el cuerpo. El siguiente paso, por lo tanto, será crear estas dos secciones en el código usando los elementos&lt;head&gt; y &lt;body&gt; ya conocidos.
+                Dentro de las etiquetas definiremos el título de nuestra página web, declararemos el set de caracteres correspondiente, proveeremos información general acerca del documento e incorporaremos los archivos externos con estilos, códigos Javascript o incluso imágenes necesarias para generar la página en la pantalla. Ejemplo:</p>
+            <p>&lt;!DOCTYPE html&gt;</p>
+            <p>&lt;html lang="es"&gt;</p>
+            <p>&lt;head&gt;</p>
+            <p>&lt;/head&gt;</p>
+            <p>&lt;/html&gt;</p>
+            <p><strong>&lt;body&gt;</strong></p>
+            <p>La siguiente gran sección que es parte principal de la organización de un documento HTML es el cuerpo. El cuerpo representa la parte visible de todo documento y es especificado entre etiquetas <body>:
+                :</p> 
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html lang="es"&gt;</p>
+                <p>&lt;head&gt;</p> 
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;/body&gt;</p> 
+                <p>&lt;/html&gt;</p> 
+                <p><strong>&lt;meta&gt;</strong></p> 
+                <p>Ésta es una etiqueta &lt;meta&gt; que especifica cómo el texto será presentado en pantalla.</p> 
+                <p><strong>&lt;title&gt;</strong></p> 
+                <p>La etiqueta &lt;title&gt;, especifica el título del documento. </p>
+                <p><strong>&lt;link&gt;</strong></p> 
+                <p>Este elemento es usado para incorporar estilos, códigos Javascript, imágenes o iconos desde archivos externos. Uno de los usos más comunes para <link> es la incorporación de archivos con estilos CSS.</p>
+                <p><strong>Ejemplo con etiquetas &lt;meta>, &lt;title> y &lt;link&gt;</strong></p> 
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html lang="es"&gt;</p> 
+                <p>&lt;head&gt;</p> 
+                <p> &lt;meta charset="iso-8859-1"&gt;</p>
+                <p> &lt;meta name="description" content="Ejemplo de HTML5"&gt;</p> 
+                <p> &lt;meta name="keywords" content="HTML5, CSS3, JavaScript"&gt;</p> 
+                <p> &lt;title>Este texto es el título del documento&lt;/title&gt;</p>
+                <p> &lt;link rel=”stylesheet” href=”misestilos.css”&gt;</p> 
+                <p>&lt;/head&gt;</p> 
+                <p>&lt;body&gt;</p>
+                <p>&lt;/body&gt;</p> 
+                <p>&lt;/html&gt;</p> 
+        </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>
