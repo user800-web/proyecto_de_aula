@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+        <div class="container texto">
+            <h2>Postgres</h2>
+            <p>PostgreSQL es un potente sistema de base de datos relacional de objetos de código abierto que utiliza y amplía el lenguaje SQL combinado con muchas características que almacenan y escalan de forma segura las cargas de trabajo de datos más complicadas. Los orígenes de PostgreSQL se remontan a 1986 como parte del proyecto POSTGRES de la Universidad de California en Berkeley y cuenta con más de 30 años de desarrollo activo en la plataforma central.
+            </p>
+            <p>A continuación, se muestra una lista exhaustiva de varias funciones que se encuentran en PostgreSQL, y se agregan más en cada versión importante:<p>
+            <ol>
+                <li>Tipos de datos.
+                    <ul>
+                        <li>
+                            Primitivas: entero, numérico, cadena, booleano.
+                        </li>
+                        <li>
+                            Estructurado: Fecha/Hora, Matriz, Rango/Multirango, UUID.
+                        </li>
+                        <li>
+                            Documento: JSON/JSONB, XML, clave-valor (Hstore).
+                        </li>
+                        <li>
+                            Geometría: punto, línea, círculo, polígono.
+                        </li>
+                        <li>
+                            Personalizaciones: Compuesto, Tipos personalizados.
+                        </li>
+                    </ul>
+                </li>
+                <li>Integridad de los datos.
+                    <ul>
+                        <li>
+                            ÚNICO, NO NULO.
+                        </li>
+                        <li>
+                            Claves primarias.
+                        </li>
+                        <li>
+                            Llaves extranjeras.
+                        </li>
+                        <li>
+                            Restricciones de exclusión.
+                        </li>
+                        <li>
+                            Bloqueos explícitos, bloqueos de aviso.
+                        </li>
+                    </ul>
+                </li>
+                <li>Concurrencia, Rendimiento.
+                    <ul>
+                        <li>
+                            Indexación: árbol B, varias columnas, expresiones, parcial.
+                        </li>
+                        <li>
+                            Indexación avanzada: GiST, SP-Gist, KNN Gist, GIN, BRIN, índices de cobertura, filtros Bloom.
+                        </li>
+                        <li>
+                            Planificador/optimizador de consultas sofisticado, escaneos de solo índice, estadísticas de varias columnas.
+                        </li>
+                        <li>
+                            Transacciones, transacciones anidadas (a través de puntos de guardado).
+                        </li>
+                        <li>
+                            Control de concurrencia de múltiples versiones (MVCC).
+                        </li>
+                        <li>
+                            Paralelización de consultas de lectura y creación de índices de árbol B.
+                        </li>
+                        <li>
+                            Particionamiento de tablas.
+                        </li>
+                        <li>
+                            Todos los niveles de aislamiento de transacciones definidos en el estándar SQL, incluido Serializable.
+                        </li>
+                        <li>
+                            Compilación de expresiones justo a tiempo (JIT).
+                        </li>
+                    </ul>
+                </li>
+                <li>Confiabilidad, Recuperación de Desastres.</li>
+                <li>Seguridad.</li>
+                <li>Extensibilidad.</li>
+                <li>Internacionalización, Búsqueda de Texto, [1].</li>
+            </ol>
+           
+            <h3>Bibliografía</h3>
+            <p>[1]  PostgreSQL, «PostgreSQL?,» [En línea]. Available: https://www.postgresql.org/about/. [Último acceso: 2 Julio 2022].</p>
+
+        </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>

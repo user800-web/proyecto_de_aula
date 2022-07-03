@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+            <div class="list-group list-group-flush my-3">
+               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    <i class="fas fa-home" ></i>Inicio</a>
+                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                  <i class="far fa-file"></i>  Glosario</a>
+                  
+            </div>
+        </div>
+        
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+            </nav>
+        
+        <div class="container texto">
+            <h2>JSP</h2>
+            <p>JavaServer Pages (JSP) es otra tecnología Java para desarrollar aplicaciones web. JSP fue
+                lanzado durante el tiempo en que la tecnología de servlet había ganado popularidad como uno de los mejores
+                tecnologías disponibles. Sin embargo, JSP no pretende reemplazar los servlets. De hecho, JSP es una extensión
+                de la tecnología de servlet, y es una práctica común usar servlets y páginas JSP en el mismo
+                aplicaciones web.<p>
+            <p>Crear páginas JSP es tan fácil que puede escribir aplicaciones JSP sin mucho conocimiento de
+                la API subyacente. Sin embargo, si desea ser un buen programador web de Java, debe
+                conocer JSP y servlets. Incluso si usa solo páginas JSP en sus aplicaciones web Java,
+                comprender los servlets sigue siendo muy importante, [1].</p>
+            <p>El código fuente de una página JSP puede contener:</p>
+            <ol>
+                <li>Directivas: Indican información general de la página, como puede ser importación de clases, página a invocar ante errores, si la página forma parte de una sesión, etc.</li>
+                <li>Declaraciones: Sirven para declarar métodos o variables.</li>
+                <li>Scriptlets: Código Java embebido.</li>
+                <li>Expresiones: Expresiones Java que se evalúan y se envían a la salida.</li>
+                <li>Tags JSP: Etiquetas especiales que interpreta el servidor.</li>
+            </ol>
+            <h3>Elementos de JSP</h3>
+            <p><strong>Código Java:</strong>Podemos insertar código Java dentro de JSP de tres formas: Expresiones, scriptlets y declaraciones. </p>
+            <p><strong>Directivas:</strong>Las directivas son elementos que proporcionan información al motor JSP, e influirán en la estructura del servlet generado. Hay tres tipos de directivas: page, taglib e include.</p>
+            <p><strong>Acciones:</strong>Las acciones tienen la forma &lt;jsp:accion [parámetros]/&gt;, y tienen diversos usos, entre los que destacan la inclusión de páginas y transferencia de control, [2]. </p>
+
+            <h3>Bibliografía</h3>
+            <p>[1]  B. Kurniawan, Java for the Web with Servlets, JSP, and EJB: A Developer's Guide to J2EE Solutions, New Riders Publishing, 2002.</p>
+            <p>[2]  J. C. G. Candela, «INTRODCUCCION jsp,» 2004. </p>
+        </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    </body>
+</html>
