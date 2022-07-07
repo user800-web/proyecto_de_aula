@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="es-EC">
     <head>
-        <title>HTML</title>
+        <title>PostgreSQL</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
@@ -129,13 +129,77 @@ and open the template in the editor.
                         </li>
                     </ul>
                 </li>
-                <li>Confiabilidad, Recuperación de Desastres.</li>
-                <li>Seguridad.</li>
-                <li>Extensibilidad.</li>
-                <li>Internacionalización, Búsqueda de Texto, [1].</li>
+                <li>Confiabilidad, Recuperación de Desastres.
+                    <ul>
+                        <li>
+                            Registro de escritura anticipada (WAL)
+                        </li>
+                        <li>
+                            Replicación: Asíncrona, Sincrónica, Lógica
+                        </li>
+                        <li>
+                            Recuperación de un punto en el tiempo (PITR), esperas activas
+                        </li>
+                        <li>
+                            Espacios de tablas
+                        </li>
+                    </ul>
+                </li>
+                <li>Seguridad.
+                    <ul>
+                        <li>
+                            Autenticación: GSSAPI, SSPI, LDAP, SCRAM-SHA-256, Certificado y más
+                        </li>
+                        <li>
+                            Robusto sistema de control de acceso
+                        </li>
+                        <li>
+                            Seguridad a nivel de columna y fila
+                        </li>
+                        <li>
+                            Autenticación multifactor con certificados y un método adicional
+                        </li>
+                    </ul>
+                </li>
+                <li>Extensibilidad.
+                    <ul>
+                        <li>
+                            Funciones y procedimientos almacenados
+                        </li>
+                        <li>
+                            Lenguajes de procedimiento: PL/PGSQL, Perl, Python (y muchos más)
+                        </li>
+                        <li>
+                            Expresiones de ruta SQL/JSON
+                        </li>
+                        <li>
+                            Envoltorios de datos externos: conéctese a otras bases de datos o flujos con una interfaz SQL estándar
+                        </li>
+                        <li>
+                            Interfaz de almacenamiento personalizable para tablas
+                        </li>
+                        <li>
+                            Muchas extensiones que brindan funcionalidad adicional, incluido PostGIS
+                        </li>
+                    </ul>
+                </li>
+                <li>Internacionalización, Búsqueda de Texto, <a href="#b1">[1].</a>
+                    <ul>
+                        <li>
+                            Compatibilidad con conjuntos de caracteres internacionales, por ejemplo, a través de intercalaciones de ICU
+                        </li>
+                        <li>
+                            Intercalaciones que no distinguen entre mayúsculas y minúsculas ni acentos
+                        </li>
+                        <li>
+                            Búsqueda de texto completo
+                        </li>
+                    </ul>
+                </li>
             </ol>
            
             <h3>Bibliografía</h3>
+            <a name="b1"/>
             <p>[1]  PostgreSQL, «PostgreSQL?,» [En línea]. Available: https://www.postgresql.org/about/. [Último acceso: 2 Julio 2022].</p>
 
         </div>
