@@ -9,89 +9,117 @@ and open the template in the editor.
         <title>JSP</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-       <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
-       <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  
+
     </head>
     <body>
-        
+
         <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
-        <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
-                <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
-            <div class="list-group list-group-flush my-3">
-               <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-home" ></i>Inicio</a>
-                <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                     <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
-                <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                     <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
-                <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                   <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
-                <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                  <i class="far fa-file"></i>  Glosario</a>
-                  
-            </div>
-        </div>
-        
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    
+            <!-- Sidebar -->
+            <div class="bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                    <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+                <div class="list-group list-group-flush my-3">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fas fa-home" ></i>Inicio</a>
+                    <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                    <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                    <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                    <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="far fa-file"></i>  Glosario</a>
+
                 </div>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
- 
-            </nav>
-        
-        <div class="container texto">
-            <h2>JSP</h2>
-            <p>JavaServer Pages (JSP) es otra tecnología Java para desarrollar aplicaciones web. JSP fue
-                lanzado durante el tiempo en que la tecnología de servlet había ganado popularidad como uno de los mejores
-                tecnologías disponibles. Sin embargo, JSP no pretende reemplazar los servlets. De hecho, JSP es una extensión
-                de la tecnología de servlet, y es una práctica común usar servlets y páginas JSP en el mismo
-                aplicaciones web.<p>
-            <p>Crear páginas JSP es tan fácil que puede escribir aplicaciones JSP sin mucho conocimiento de
-                la API subyacente. Sin embargo, si desea ser un buen programador web de Java, debe
-                conocer JSP y servlets. Incluso si usa solo páginas JSP en sus aplicaciones web Java,
-                comprender los servlets sigue siendo muy importante, <a href="#b1">[1].</a></p>
-            <p>El código fuente de una página JSP puede contener:</p>
-            <ol>
-                <li>Directivas: Indican información general de la página, como puede ser importación de clases, página a invocar ante errores, si la página forma parte de una sesión, etc.</li>
-                <li>Declaraciones: Sirven para declarar métodos o variables.</li>
-                <li>Scriptlets: Código Java embebido.</li>
-                <li>Expresiones: Expresiones Java que se evalúan y se envían a la salida.</li>
-                <li>Tags JSP: Etiquetas especiales que interpreta el servidor.</li>
-            </ol>
-            <h3>Elementos de JSP</h3>
-            <p><strong>Código Java:</strong>Podemos insertar código Java dentro de JSP de tres formas: Expresiones, scriptlets y declaraciones. </p>
-            <p><strong>Directivas:</strong>Las directivas son elementos que proporcionan información al motor JSP, e influirán en la estructura del servlet generado. Hay tres tipos de directivas: page, taglib e include.</p>
-            <p><strong>Acciones:</strong>Las acciones tienen la forma &lt;jsp:accion [parámetros]/&gt;, y tienen diversos usos, entre los que destacan la inclusión de páginas y transferencia de control, <a href="#b2">[2].</a></p>
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
 
-            <h3>Bibliografía</h3>
-            <a name="b1"/>
-            <p>[1]  B. Kurniawan, Java for the Web with Servlets, JSP, and EJB: A Developer's Guide to J2EE Solutions, New Riders Publishing, 2002.</p>
-            <a name="b2"/>
-            <p>[2]  J. C. G. Candela, «INTRODCUCCION jsp,» 2004. </p>
-        </div>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var el = document.getElementById("wrapper");
-        var toggleButton = document.getElementById("menu-toggle");
+                    </div>
 
-        toggleButton.onclick = function () {
-            el.classList.toggle("toggled");
-        };
-    </script>
-    </body>
-</html>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </nav>
+
+                <div class="container texto">
+                    <h3>¿Qué es JSP?</h3>
+                    <p>
+                        Java Server Pages (JSP) es una tecnología que nos permite mezclar HTML estático con HTML generado dinámicamente. Muchas páginas Web que están construidas con programas CGI son casi estáticas, con la parte dinámica limitada a muy pocas localizaciones. Pero muchas variaciones CGI, incluyendo los servlets, hacen que generemos la página completa mediante nuestro programa, incluso aunque la mayoría de ella sea siempre lo mismo. JSP nos permite crear dos partes de forma separada [9].                        
+                    </p>
+                    <h3>¿Cuáles son las Ventajas de JSP?</h3>                        
+                    <ul type="disc">
+                        <li><b>Contra Active Server Pages (ASP):</b> Las ventajas de JSP estan duplicadas. Primero, la parte dinámica está escrita en Java, no en Visual Basic, por eso es mucho más poderosa y fácil de usar. Segundo, es portable a otros sistemas operativos y servidores Web [9].</li>
+                        <li><b>Contra los Servlets:</b> JSP no nos da nada que no pudierámos en principio hacer con un servlet. Pero es mucho más conveniente escribir (y modificar!) HTML normal que tener que hacer un billón de sentencias println que generen HTML. Además, separando el formato del contenido podemos poner diferentes personas en diferentes tareas: nuestros expertos en diseño de páginas Web pueden construir el HTML, dejando espacio para que nuestros programadores de servlets inserten el contenido dinámico [9].</li>
+                        <li><b>Contra Server-Side Includes (SSI):</b> SSI es una tecnología ampliamente soportada que incluye piezas definidas externamente dentro de una página Web estática. JSP es mejor porque nos permite usar servlets en vez de un programa separado para generar las partes dinámicas. Además, SSI, realmente está diseñado para inclusiones sencillas, no para programas "reales" que usen formularios de datos, hagan conexiones a bases de datos, etc [9].</li>
+                        <li><b>Contra JavaScript:</b> JavaScript puede general HTML dinámicamente en el cliente. Este una capacidad útil, pero sólo maneja situaciones donde la información dinámica está basada en el entorno del cliente. Con la excepción de las cookies, el HTTP y el envió de formularios no están disponibles con JavaScript. Y, como se ejecuta en el cliente, JavaScript no puede acceder a los recursos en el lado del servidor, como bases de datos, catálogos, información de precios, etc [9].</li>
+                    </ul> 
+                    <h3>Elementos Script JSP</h3>
+                    <p> 
+                        Los Scripts JSP permiten insertar codigo java en el servlet resultante de la compilacion de la pagina JSP, hay tres formas  [10]:                         
+                    </p>                        
+                    <ul type="disc">
+                        <li><b>Expresiones:</b> Que se evaluan y se insertan en la salida de la web resultante, <%= expresion %> [10].</li>
+                        <li><b>Scriptlets:</b> Es codigo java que se introduciria en el metodo service del servlet, <% codigo %> [10].</li>
+                        <li><b>Declaraciones:</b> Es la manera de declarar variables globales para todo el servlet, <%! codigo%> [10].</li>
+                    </ul>
+                    <h3>Expresiones</h3>
+                    <p> 
+                        Se usan para mandar valores directamente a la pagina web resultante de la JSP, <%= expresion %>, la expresion es ejecutada, se convierte a una cadena de caracteres (String) y insertada en la pagina.
+                        En las expresiones podemos usar gran cantidad de variables predefinidas [10], los mas usados son:
+                    </p> 
+                    <ul type="disc">
+                        <li><b>request</b> de la clase HttpServletRequest</li>
+                        <li><b>response</b> de la clase HttpServletResponse</li>
+                        <li><b>session</b> de la clase HttpSession que esta asociada al request, si es que trabajamos con sessions</li>
+                        <li><b>out</b> se trata de una clase PrintWriter usada para imprimir directamente en la pagina resultante [10].</li>
+                    </ul>
+                    <h3>Scriptlets</h3>
+                    <p> 
+                        Si queremos hacer algo más complejo que insertar una simple expresión, los scriptlets JSP nos permiten insertar código arbitrario dentro del método servlet que será construido al generar la página [10]. Los Scriptlets tienen la siguiente forma:                    
+                    </p> 
+                    <img id="img-contenido" src="../img/script1.jpg" alt="">
+                    <p>
+                        Si queremos usar los caracteres "%>" dentro de un scriptlet, debemos poner "%\>". Finalmente, observa que el equivalente XML de <% Código %> es  [10]:
+                    </p>
+                    <img id="img-contenido" src="../img/script2.jpg" alt="">
+
+                    <h3>Declaraciones</h3>
+                    <p> 
+                        as declaraciones JSP nos permiten configurar variables para su uso posterior en expresiones o scriptlets. También podemos declarar variables dentro de expresiones o scriptlets en el momento de usarlas.
+                        El ámbito es toda la página JSP, no hay concepto de variables de ejemplar. Es decir, no tenemos que declarar variables de ejemplar para usar en más de una expresión o scriptlet. Las declaraciones van encerradas entre etiquetas de declaración <%! Codigo Java %>.
+                        Como las declaraciones no generan ninguna salida, normalmente se usan en conjuncion con expresiones JSP o scriptlets  [10], ejemplo:
+                    </p> 
+                    <img id="img-contenido" src="../img/declaracion.jpg" alt="">                     
+                    <p> 
+                        Este codigo imprime el numero de veces que se ha solicitado la pagina actual desde que el servidor se arranco (o la clase del servlet se modifico o recargo) [10].
+                    </p>  
+                    <h3>Bibliografía</h3>
+                    <a name="b1"/>
+                    <p>[1]    Á. Roldán, «ciberaula,» [En línea]. Available: https://www.ciberaula.com/cursos/java/tecnologia_jps.php.</p>
+                    <a name="b2"/>
+                    <p>[2]  A. Carrillo Torres, «LenguajeJSP,» [En línea]. Available: http://dis.um.es/~lopezquesada/documentos/IES_1415/IAW/curso/UT5/ActividadesAlumnos/jsp4/index.html. </p>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+                <script>
+                    var el = document.getElementById("wrapper");
+                    var toggleButton = document.getElementById("menu-toggle");
+
+                    toggleButton.onclick = function () {
+                        el.classList.toggle("toggled");
+                    };
+                </script>
+                </body>
+                </html>
