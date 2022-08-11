@@ -86,11 +86,40 @@ and open the template in the editor.
                             servidor. El convertidor permite al usuario trabajar con datos en diferentes unidades, <a href="#b1">[1].</a></li>
                     </ol>    
                     <p>JSF contiene dos importantes componentes de software: las Tag Libraries y los Managed Beans.</p>
-
+                    <h2>Facetas(Facelets)</h2>
+                    <p>
+                        Una diferencia notable entre las versiones modernas de JSF y las versiones anteriores
+                        es que Facelets es ahora la tecnología de visualización preferida. Las versiones anteriores de JSF usaban
+                        JSP como su tecnología de visualización predeterminada. Dado que la tecnología JSP es anterior a JSF, a veces
+                        usar JSP con JSF se sentía antinatural o creaba problemas. Por ejemplo, el ciclo de vida de
+                        JSP es diferente del ciclo de vida de JSF; este desajuste introdujo algunos problemas
+                        para desarrolladores de aplicaciones JSF 1.x.
+                    </p>
+                    <br/>
+                    <p>
+                        Jacob Hookom escribió una tecnología de vista específicamente
+                        para JSF. Llamó a su tecnología de visualización Facelets. Facelets tuvo tanto éxito que
+                        se convirtió en un estándar de facto para JSF.
+                    </p>
+                    <h2>Opcional faces-config.xml</h2>
+                    <p>Las aplicaciones J2EE heredadas sufrieron lo que algunos habrían considerado ser
+                    configuración XML excesiva.
+                    Java EE 5 tomó algunas medidas para reducir considerablemente la configuración XML. Java
+                    EE 6 redujo aún más la configuración requerida, haciendo que las caras-config.
+                    xml Archivo de configuración JSF opcional en JSF 2.0.</p><br/>
+                    <p>Existe una convención para la navegación JSF. Si el valor de la acción
+                    el atributo de un enlace de comando JSF 2 o botón de comando coincide con el nombre de una facelet
+                    (menos la extensión XHTML), luego, por convención, la aplicación navegará a
+                    la facelet que coincide con el nombre de la acción. Esta convención nos permite evitar tener
+                    para configurar la navegación de una aplicación en faces-config.xml.
+                    Para muchas aplicaciones JSF modernas, faces-config.xml es completamente innecesario ya que
+                    siempre y cuando se sigan las convenciones JSF establecidas, <a href="#b2">[2].</a></p>
+                    
                     <h3>Bibliografía</h3>
                     <a name="b1"/>
                     <p>[1]  M. d. C. Gómez Fuentes y J. Cervantes Ojeda, Introducción a la Programación Web con Java: JSP y Servlets, JavaServer Faces, México, 2017.</p>
-
+                    <a name="b2"/>
+                    <p>[2]  D. R. Heffelfinger, Java EE 7 with GlassFish 4 Application Server. Packt Publishing - ebooks Account, 2014.</p>
                 </div>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
                 <script>
