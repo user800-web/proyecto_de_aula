@@ -57,23 +57,23 @@ and open the template in the editor.
                 <div class="container texto">
                     <h3>¿Qué es JSP?</h3>
                     <p>
-                        Java Server Pages (JSP) es una tecnología que nos permite mezclar HTML estático con HTML generado dinámicamente. Muchas páginas Web que están construidas con programas CGI son casi estáticas, con la parte dinámica limitada a muy pocas localizaciones. Pero muchas variaciones CGI, incluyendo los servlets, hacen que generemos la página completa mediante nuestro programa, incluso aunque la mayoría de ella sea siempre lo mismo. JSP nos permite crear dos partes de forma separada [9].                        
+                        Java Server Pages (JSP) es una tecnología que nos permite mezclar HTML estático con HTML generado dinámicamente. Muchas páginas Web que están construidas con programas CGI son casi estáticas, con la parte dinámica limitada a muy pocas localizaciones. Pero muchas variaciones CGI, incluyendo los servlets, hacen que generemos la página completa mediante nuestro programa, incluso aunque la mayoría de ella sea siempre lo mismo. JSP nos permite crear dos partes de forma separada [1].                        
                     </p>
                     <h3>¿Cuáles son las Ventajas de JSP?</h3>                        
                     <ul type="disc">
                         <li><b>Contra Active Server Pages (ASP):</b> Las ventajas de JSP estan duplicadas. Primero, la parte dinámica está escrita en Java, no en Visual Basic, por eso es mucho más poderosa y fácil de usar. Segundo, es portable a otros sistemas operativos y servidores Web [9].</li>
-                        <li><b>Contra los Servlets:</b> JSP no nos da nada que no pudierámos en principio hacer con un servlet. Pero es mucho más conveniente escribir (y modificar!) HTML normal que tener que hacer un billón de sentencias println que generen HTML. Además, separando el formato del contenido podemos poner diferentes personas en diferentes tareas: nuestros expertos en diseño de páginas Web pueden construir el HTML, dejando espacio para que nuestros programadores de servlets inserten el contenido dinámico [9].</li>
-                        <li><b>Contra Server-Side Includes (SSI):</b> SSI es una tecnología ampliamente soportada que incluye piezas definidas externamente dentro de una página Web estática. JSP es mejor porque nos permite usar servlets en vez de un programa separado para generar las partes dinámicas. Además, SSI, realmente está diseñado para inclusiones sencillas, no para programas "reales" que usen formularios de datos, hagan conexiones a bases de datos, etc [9].</li>
-                        <li><b>Contra JavaScript:</b> JavaScript puede general HTML dinámicamente en el cliente. Este una capacidad útil, pero sólo maneja situaciones donde la información dinámica está basada en el entorno del cliente. Con la excepción de las cookies, el HTTP y el envió de formularios no están disponibles con JavaScript. Y, como se ejecuta en el cliente, JavaScript no puede acceder a los recursos en el lado del servidor, como bases de datos, catálogos, información de precios, etc [9].</li>
+                        <li><b>Contra los Servlets:</b> JSP no nos da nada que no pudierámos en principio hacer con un servlet. Pero es mucho más conveniente escribir (y modificar!) HTML normal que tener que hacer un billón de sentencias println que generen HTML. Además, separando el formato del contenido podemos poner diferentes personas en diferentes tareas: nuestros expertos en diseño de páginas Web pueden construir el HTML, dejando espacio para que nuestros programadores de servlets inserten el contenido dinámico [1].</li>
+                        <li><b>Contra Server-Side Includes (SSI):</b> SSI es una tecnología ampliamente soportada que incluye piezas definidas externamente dentro de una página Web estática. JSP es mejor porque nos permite usar servlets en vez de un programa separado para generar las partes dinámicas. Además, SSI, realmente está diseñado para inclusiones sencillas, no para programas "reales" que usen formularios de datos, hagan conexiones a bases de datos, etc [1].</li>
+                        <li><b>Contra JavaScript:</b> JavaScript puede general HTML dinámicamente en el cliente. Este una capacidad útil, pero sólo maneja situaciones donde la información dinámica está basada en el entorno del cliente. Con la excepción de las cookies, el HTTP y el envió de formularios no están disponibles con JavaScript. Y, como se ejecuta en el cliente, JavaScript no puede acceder a los recursos en el lado del servidor, como bases de datos, catálogos, información de precios, etc [1].</li>
                     </ul> 
                     <h3>Elementos Script JSP</h3>
                     <p> 
-                        Los Scripts JSP permiten insertar codigo java en el servlet resultante de la compilacion de la pagina JSP, hay tres formas  [10]:                         
+                        Los Scripts JSP permiten insertar codigo java en el servlet resultante de la compilacion de la pagina JSP, hay tres formas  [2]:                         
                     </p>                        
                     <ul type="disc">
-                        <li><b>Expresiones:</b> Que se evaluan y se insertan en la salida de la web resultante, <%= expresion %> [10].</li>
-                        <li><b>Scriptlets:</b> Es codigo java que se introduciria en el metodo service del servlet, <% codigo %> [10].</li>
-                        <li><b>Declaraciones:</b> Es la manera de declarar variables globales para todo el servlet, <%! codigo%> [10].</li>
+                        <li><b>Expresiones:</b> Que se evaluan y se insertan en la salida de la web resultante, <%= expresion %> [2].</li>
+                        <li><b>Scriptlets:</b> Es codigo java que se introduciria en el metodo service del servlet, <% codigo %> [2].</li>
+                        <li><b>Declaraciones:</b> Es la manera de declarar variables globales para todo el servlet, <%! codigo%> [2].</li>
                     </ul>
                     <h3>Expresiones</h3>
                     <p> 
@@ -88,23 +88,23 @@ and open the template in the editor.
                     </ul>
                     <h3>Scriptlets</h3>
                     <p> 
-                        Si queremos hacer algo más complejo que insertar una simple expresión, los scriptlets JSP nos permiten insertar código arbitrario dentro del método servlet que será construido al generar la página [10]. Los Scriptlets tienen la siguiente forma:                    
+                        Si queremos hacer algo más complejo que insertar una simple expresión, los scriptlets JSP nos permiten insertar código arbitrario dentro del método servlet que será construido al generar la página [2]. Los Scriptlets tienen la siguiente forma:                    
                     </p> 
-                    <img id="img-contenido" src="../img/script1.jpg" alt="">
+                    <img id="img-contenido" src="../webapp/images/script1.jpg" alt="">
                     <p>
-                        Si queremos usar los caracteres "%>" dentro de un scriptlet, debemos poner "%\>". Finalmente, observa que el equivalente XML de <% Código %> es  [10]:
+                        Si queremos usar los caracteres "%>" dentro de un scriptlet, debemos poner "%\>". Finalmente, observa que el equivalente XML de <% Código %> es  [2]:
                     </p>
-                    <img id="img-contenido" src="../img/script2.jpg" alt="">
+                    <img id="img-contenido" src="../webapp/images/script2.jpg" alt="">
 
                     <h3>Declaraciones</h3>
                     <p> 
                         as declaraciones JSP nos permiten configurar variables para su uso posterior en expresiones o scriptlets. También podemos declarar variables dentro de expresiones o scriptlets en el momento de usarlas.
                         El ámbito es toda la página JSP, no hay concepto de variables de ejemplar. Es decir, no tenemos que declarar variables de ejemplar para usar en más de una expresión o scriptlet. Las declaraciones van encerradas entre etiquetas de declaración <%! Codigo Java %>.
-                        Como las declaraciones no generan ninguna salida, normalmente se usan en conjuncion con expresiones JSP o scriptlets  [10], ejemplo:
+                        Como las declaraciones no generan ninguna salida, normalmente se usan en conjuncion con expresiones JSP o scriptlets  [2], ejemplo:
                     </p> 
-                    <img id="img-contenido" src="../img/declaracion.jpg" alt="">                     
+                    <img id="img-contenido" src="../webapp/images/declaracion.jpg" alt="">                     
                     <p> 
-                        Este codigo imprime el numero de veces que se ha solicitado la pagina actual desde que el servidor se arranco (o la clase del servlet se modifico o recargo) [10].
+                        Este codigo imprime el numero de veces que se ha solicitado la pagina actual desde que el servidor se arranco (o la clase del servlet se modifico o recargo) [2].
                     </p>  
                     <h3>Bibliografía</h3>
                     <a name="b1"/>
