@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-         <title>Web Services REST</title>
+        <title>Web Services REST</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
@@ -51,10 +51,38 @@ and open the template in the editor.
                     </button>
 
                 </nav>
-                   <div class="container texto">
-                    
+                <div class="container texto">
+                    <h3>¿Qué es API REST?</h3>
+                    <p>
+                        RESTful son las aplicaciones de Web Service procedente de la arquitectura de software REST (Representational State Transfer) y, a diferencia del SOAP, este no está estructurado bajo estándares definidos y este es más ligero. Además, su flexibilidad nos permite que no funcione únicamente con lenguaje XML, sino también puede funcionar bajo JSON (JavaScript Object Notation) o otros lenguajes de programación[2]<br>
+                        REST cambió por completo la ingeniería de software a partir del 2000. Este nuevo enfoque de desarrollo de proyectos y servicios web fue definido por Roy Fielding, el padre de la especificación HTTP y uno los referentes internacionales en todo lo relacionado con la Arquitectura de Redes, en su disertación ‘Architectural Styles and the Design of Network-based Software Architectures’. En el campo de las APIs, REST (Representational State Transfer- Transferencia de Estado Representacional) es, a día de hoy, el alfa y omega del desarrollo de servicios de aplicaciones[1].<br>
+
+                        En la actualidad no existe proyecto o aplicación que no disponga de una API REST para la creación de servicios profesionales a partir de ese software. Twitter, YouTube, los sistemas de identificación con Facebook… hay cientos de empresas que generan negocio gracias a REST y las APIs REST. Sin ellas, todo el crecimiento en horizontal sería prácticamente imposible. Esto es así porque REST es el estándar más lógico, eficiente y habitual en la creación de APIs para servicios de Internet[1].<br>
+
+                        Buscando una definición sencilla, REST es cualquier interfaz entre sistemas que use HTTP para obtener datos o generar operaciones sobre esos datos en todos los formatos posibles, como XML y JSON. Es una alternativa en auge a otros protocolos estándar de intercambio de datos como SOAP (Simple Object Access Protocol), que disponen de una gran capacidad pero también mucha complejidad. A veces es preferible una solución más sencilla de manipulación de datos como REST[1].
+                    </p>
+                    <h3>Características de REST</h3>
+                    <ul type="disc">
+                        <li><b>Protocolo cliente/servidor sin estado: </b> cada petición HTTP contiene toda la información necesaria para ejecutarla, lo que permite que ni cliente ni servidor necesiten recordar ningún estado previo para satisfacerla. Aunque esto es así, algunas aplicaciones HTTP incorporan memoria caché. Se configura lo que se conoce como protocolo cliente-caché-servidor sin estado: existe la posibilidad de definir algunas respuestas a peticiones HTTP concretas como cacheables, con el objetivo de que el cliente pueda ejecutar en un futuro la misma respuesta para peticiones idénticas. De todas formas, que exista la posibilidad no significa que sea lo más recomendable[1].</li>
+                        <li>Las operaciones más importantes relacionadas con los datos en cualquier sistema REST y la especificación HTTP son cuatro: POST (crear), GET (leer y consultar), PUT (editar) y DELETE (eliminar)[1].</li>
+                        <li><b>Los objetos en REST siempre se manipulan a partir de la URI:</b> Es la URI y ningún otro elemento el identificador único de cada recurso de ese sistema REST. La URI nos facilita acceder a la información para su modificación o borrado, o, por ejemplo, para compartir su ubicación exacta con terceros[1].</li>
+                        <li><b>Interfaz uniforme:</b> para la transferencia de datos en un sistema REST, este aplica acciones concretas (POST, GET, PUT y DELETE) sobre los recursos, siempre y cuando estén identificados con una URI. Esto facilita la existencia de una interfaz uniforme que sistematiza el proceso con la información[1].</li>
+                        <li><b>Sistema de capas:</b> arquitectura jerárquica entre los componentes. Cada una de estas capas lleva a cabo una funcionalidad dentro del sistema REST[1].</li>
+                        <li><b>Uso de hipermedios:</b> hipermedia es un término acuñado por Ted Nelson en 1965 y que es una extensión del concepto de hipertexto. Ese concepto llevado al desarrollo de páginas web es lo que permite que el usuario puede navegar por el conjunto de objetos a través de enlaces HTML. En el caso de una API REST, el concepto de hipermedia explica la capacidad de una interfaz de desarrollo de aplicaciones de proporcionar al cliente y al usuario los enlaces adecuados para ejecutar acciones concretas sobre los datos[1].</li>
+                    </ul> 
+                     <h3>Ventajas que ofrece REST para el desarrollo</h3>
+                    <ul type="disc">
+                        <li><b>Separación entre el cliente y el servidor: </b> el protocolo REST separa totalmente la interfaz de usuario del servidor y el almacenamiento de datos. Eso tiene algunas ventajas cuando se hacen desarrollos. Por ejemplo, mejora la portabilidad de la interfaz a otro tipo de plataformas, aumenta la escalabilidad de los proyectos y permite que los distintos componentes de los desarrollos se puedan evolucionar de forma independiente[1].</li>
+                        <li><b>Visibilidad, fiabilidad y escalabilidad:</b> La separación entre cliente y servidor tiene una ventaja evidente y es que cualquier equipo de desarrollo puede escalar el producto sin excesivos problemas. Se puede migrar a otros servidores o realizar todo tipo de cambios en la base de datos, siempre y cuando los datos de cada una de las peticiones se envíen de forma correcta. Esta separación facilita tener en servidores distintos el front y el back y eso convierte a las aplicaciones en productos más flexibles a la hora de trabajar[1].</li>
+                        <li><b> La API REST siempre es independiente del tipo de plataformas o lenguajes:</b> a API REST siempre se adapta al tipo de sintaxis o plataformas con las que se estén trabajando, lo que ofrece una gran libertad a la hora de cambiar o probar nuevos entornos dentro del desarrollo. Con una API REST se pueden tener servidores PHP, Java, Python o Node.js. Lo único que es indispensable es que las respuestas a las peticiones se hagan siempre en el lenguaje de intercambio de información usado, normalmente XML o JSON[1].</li>
+                        </ul> 
+                    <h3>Bibliografía</h3>
+                    <a name="b1"/>
+                    <p>[1]   "API REST: quÃ© es y cuÃ¡les son sus ventajas en el desarrollo de proyectos". BBVA API_Market. https://www.bbvaapimarket.com/es/mundo-api/api-rest-que-es-y-cuales-son-sus-ventajas-en-el-desarrollo-de-proyectos/ (accedido el 11 de agosto de 2022).</p>
+                    <a name="b2"/>
+                    <p>[2]  "Tipos de Web Service la Industria 4.0 - SOAP & RESTful | atvise®". atvise® - Sistema SCADA Web. https://atvise.vesterbusiness.com/news/tipos-web-service-en-la-industria/ (accedido el 11 de agosto de 2022). </p>
                 </div>
-                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
                 <script>
                     var el = document.getElementById("wrapper");
                     var toggleButton = document.getElementById("menu-toggle");
@@ -63,5 +91,5 @@ and open the template in the editor.
                         el.classList.toggle("toggled");
                     };
                 </script>
-    </body>
-</html>
+                </body>
+                </html>
