@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>Django</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                    <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+                <div class="list-group list-group-flush my-3">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fas fa-home" ></i>Inicio</a>
+                    <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                    <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                    <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                    <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="far fa-file"></i>  Glosario</a>
+
+                </div>
+            </div>
+
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </nav>
+
+                <div class="container texto">
+                    <h2>Framework Django</h2>
+                    <h4>Historia de Django</h4>
+                    <p><strong>Desarrolladores</strong></p>
+                    <p><strong>Adrian Holovaty:</strong> Nacido en 1981,  es un desarrollador web, periodista y empresario estadounidense de Chicago, Illinois , que 
+                        vive en Ámsterdam, Países Bajos. Es co-creador del marco web Django y defensor del "periodismo a través de la programación 
+                        informática", <a href="#b1">[1].</a></p>
+                    <img src="images/holovaty.jpg" width="150" height="150"/>
+                    <p><strong>Simon Willison:</strong> Nacido en 1981, es un programador británico, cofundador del directorio de conferencias 
+                        sociales Lanyrd y director de arquitectura de Eventbrite . Originario del Reino Unido, actualmente reside en San Francisco, 
+                        California. Simon es co-creador del marco web Django y es un orador público frecuente.</p>
+                    <img src="Simon_Willison.jpg" width="150" height="150"/>
+                    <p><strong>Comienzo de Django</strong></p>
+                    <p>Django nació en el año 2003, cuando los programadores Web del diario Lawrence Journal-World, Adrian Holovaty y Simon Willison, 
+                        comenzaron a usar Python para crear sus aplicaciones. Los periodistas (y los directivos) exigían que se agregaran nuevas 
+                        características y que aplicaciones enteras se crearan a una velocidad vertiginosa, a menudo con sólo días u horas de preaviso. 
+                        Es así que Adrian y Simon desarrollaron por necesidad un framework de desarrollo Web que les ahorrara tiempo, era la única 
+                        forma en que podían crear aplicaciones mantenibles en tan poco tiempo, <a href="#b2">[2].</a></p>
+                    <p>Originalmente se desarrolló para administrar varios sitios de noticias que se encontraban a cargo del periódico The 
+                        World Company de Lawrence, Kansas. En julio de 2005 se lanzó públicamente bajo una licencia de software otorgada 
+                        principalmente para los sistemas operativos BSD (Berkeley Software Distribution); el marco lleva el nombre del 
+                        guitarrista de jazz gitano Django Reinhardt. En junio de 2008 se creó Django Software Foundation la cual se haría 
+                        cargo de Django en el futuro, <a href="#b3">[3].</a></p>
+                    <p><strong>¿Qué es Django?</strong></p>
+                    <p>Es un framework web que usa Python para crear sitios web. Su objetivo es escribir sitios web dinámicos muy rápidos. </p>
+                    <p><strong>Traducción: Lema de Django</strong></p>
+                    <p>El framework web para perfeccionistas con plazos.</p>
+                    <p>El eslogan de Django es explícito. Este marco fue creado para acelerar el desarrollo
+                        fase de un sitio, pero no exclusivamente.</p>
+                    <p><strong>Patrones de diseño</strong></p>
+                    <ul>
+                        <li>
+                            <p>Modelo Vista Controlador. (MVC)</p>
+                        </li>
+                        <li>
+                            <p>Plantilla de vista de modelo. (MTV)</p>
+                        </li>
+                    </ul>
+                    <p><strong>El marco de Modelo Vista Controlador ( MVC)</strong></p>
+                    <p>Antes de que existiera el marco MVC, la programación web mezclaba el acceso a la base de datos código y el código 
+                        principal de la página. Esto devolvió una página HTML al usuario. Incluso si estamos almacenando archivos CSS y 
+                        JavaScript en archivos externos, los códigos de idioma del lado del servidor son almacenados en un archivo que se 
+                        comparte entre al menos tres idiomas: Python, SQL y HTML.</p>
+                    <p>El patrón MVC fue creado para separar la lógica de la representación y tener un arquitectura interna más tangible y 
+                        real. El modelo-vista-controlador (MVC) representa las tres capas de aplicación que recomienda el paradigma:</p>
+                    <img src="images/MVC.PNG" width="300" height="300"/>
+                    <ul>
+                        <li>
+                            <p><strong>Modelos:</strong> Representan la organización de los datos en una base de datos. En palabras simples, 
+                                podemos decir que cada modelo define una tabla en la base de datos y las relaciones entre otros modelos. </p>
+                        </li>
+                        <li>
+                            <p><strong>Vistas:</strong> Contienen toda la información que se enviará al cliente. Crean vistas que generará el 
+                                documento HTML final. Podemos asociar el código HTML con las vistas.</p>
+                        </li>
+                        <li>
+                            <p><strong>Controladores:</strong> Contienen todas las acciones realizadas por el servidor y no son visibles para 
+                                el cliente. El controlador comprueba si el usuario está autenticado o puede generar el código HTML a partir de
+                                una plantilla, <a href="#b4">[4].</a></p>
+                        </li>
+                    </ul>
+                    <p><strong>Relación de semejanza entre MVC con MVT</strong></p>
+                    <p>Si compara esto con el MVC clásico, "Modelo" es comparable al de Django Modelos, "Ver" suele ser Plantillas de Django, 
+                        y "Controlador" es el marco mismo que procesa una solicitud HTTP entrante y la enruta a la función de Vista correcta.</p>
+                    <p><strong>Plantilla de vista de modelo (MTV)</strong></p>
+                    <img src="images/MTV.PNG" alt=""/>
+                    <p>Django llama a esto la arquitectura Model-Template-View (MTV). Hay separación de preocupaciones entre las clases de interfaz de base de datos (Modelo), procesamiento de solicitudes de clases (Vista), y un lenguaje de plantillas para la presentación final (Plantilla), [6]</p>
+                    <p>En el marco MTV, el controlador es manejada por el marco mismo y la mayor parte de la emoción en Django sucede en modelos, plantillas y vistas, Django se conoce como un marco MTV.</p>
+                    <p>En el patrón de desarrollo de MTV:</p>
+                    <ul>
+                        <li>
+                            <p><strong>M significa "Modelo",</strong> la capa de acceso a datos. Esta capa contiene cualquier cosa y todo sobre los datos: cómo acceder a ellos, cómo validarlos, qué comportamientos tiene y las relaciones entre los datos.</p>
+                        </li>
+                        <li>
+                            <p><strong>T significa “Plantilla”,</strong> la capa de presentación. Esta capa contiene información relacionada con la presentación.</p>
+                            <p>Decisiones: cómo se debe mostrar algo en una página web u otro tipo de documento.</p>
+                        </li>
+                        <li>
+                            <p><strong>V significa "Ver" o “Vista”,</strong> la capa de lógica empresarial. Esta capa contiene la lógica que accede
+                                el modelo y se remite a la(s) plantilla(s) apropiada(s). Puedes pensar en ello como el puente.
+                                entre modelos y plantillas, <a href="#b5">[5].</a></p>
+                        </li>
+                    </ul>
+                    <p><strong>Tipos de instalación</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>Instalación local:</strong> Si instalas Django dentro del entorno por defecto/global sólo podrás 
+                                apuntar a una sóla versión de Django en la computadora. Esto puede ser un problema si quieres crear nuevos 
+                                sitios (usando la última versión de Django) pero manteniendo los sitios web que dependen de versiones más 
+                                antiguas.</p>
+                        </li>
+                        <li>
+                            <p><strong>Instalación virtual:</strong> Se habilitan múltiples entornos Django diferentes en la misma computadora.</p>
+                        </li>
+                    </ul>
+                    <p><strong>Bases de datos que soporta Django</strong></p>
+                    <ul>
+                        <li>
+                            <p>PostgreSQL.</p>
+                        </li>
+                        <li>
+                            <p>MySQL.</p>
+                        </li>
+                        <li>
+                            <p>Oracle.</p>
+                        </li>
+                        <li>
+                            <p>SQLite, <a href="#b6">[6].</a></p>
+                        </li>
+                    </ul>
+                    <p><strong>Versiones de Django que se pueden usar con Python <a href="#b7">[7].</a></strong></p>
+                    <table>
+                        <tr>
+                            <td><strong>Versión Django</strong></td>
+                            <td><strong>Versiones de Python</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2.2</td>
+                            <td>3.5, 3.6, 3.7, 3.8 (agregado en 2.2.8), 3.9 (agregado en 2.2.17)</td>
+                        </tr>
+                        <tr>
+                            <td>3.1</td>
+                            <td>3.6, 3.7, 3.8, 3.9 (agregado en 3.1.3)</td>
+                        </tr>
+                        <tr>
+                            <td>3.2</td>
+                            <td>3.6, 3.7, 3.8, 3.9, 3.10 (agregado en 3.2.9)</td>
+                        </tr>
+                        <tr>
+                            <td>4.0, 4.1</td>
+                            <td>3.8, 3.9, 3.10</td>
+                        </tr>
+                    </table>
+                    <br/>
+
+                    <h3>Bibliografía</h3>
+                    <a name="b1"/>
+                    <p>[1]  A. Holovaty, «hmong,» [En línea]. Available: https://hmong.es/wiki/Adrian_Holovaty.</p>
+                    <a name="b2"/>
+                    <p>[2]  A. C. Cárdenas López, “ANÁLISIS DE PYTHON CON DJANGO FRENTE A RUBY ON RAILS PARA DESARROLLO ÁGIL DE APLICACIONES WEB. CASO PRÁCTICO: DECH.,” Экономика Региона, vol. 10, no. 9, p. 32, 2012, [Online]. Available: https://dspace.ups.edu.ec/bitstream/123456789/5224/1/UPS-QT03885.pdf</p>
+                    <a name="b3"/>
+                    <p>[3] J. Angelus, «Django (Web framework),» de Open source, Web application framework, Architectural pattern, 2011. </p>
+                    <a name="b4"/>
+                    <p>[4]  S. Dauzon, A. Bendoraitis, and A. Ravindran, Django: Web Development with Python. 2016. [Online]. Available: </p>
+                    <a name="b5"/>
+                    <p>[5]  A. Holovaty and J. Kaplan-moss, 02 DJ - [Expert_s Voice in Web Development] Adrian Holovaty - The Definitive Guide to Django - Web Development Done Right (2008, Apress) - libgen.lc.pdf.</p>
+                    <a name="b6"/>
+                    <p>[6]  Mozilla, «Mozilla,» [En línea]. Available: (https://developer.mozilla.org/es/docs/Learn/Server-side/Django/development_environment).. [Último acceso: 16 08 2022].</p>
+                    <a name="b7"/>
+                    <p>[7]  django, «django,» [En línea]. Available: https://docs.djangoproject.com/en/4.1/faq/install/. [Último acceso: 16 08 2022].</p>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+                <script>
+                    var el = document.getElementById("wrapper");
+                    var toggleButton = document.getElementById("menu-toggle");
+
+                    toggleButton.onclick = function () {
+                        el.classList.toggle("toggled");
+                    };
+                </script>
+                </body>
+                </html>

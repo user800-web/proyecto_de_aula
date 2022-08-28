@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-EC">
+    <head>
+        <title>Spring Framework</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/82f1e32a47.js" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap_1.css" rel="stylesheet" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    </head>
+    <body>
+
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                    <i class ="fa-solid fa-laptop-code" ></i>  Proyecto de Aula</div>
+                <div class="list-group list-group-flush my-3">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fas fa-home" ></i>Inicio</a>
+                    <a href="appWeb.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-window-maximize" ></i>  Aplicaciones Web</a>
+                    <a href="dinclusivo.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-brands fa-accessible-icon" ></i>  Diseño Inclusivo</a>
+                    <a href="historiayE.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="fa-solid fa-globe" ></i>  Evolución de la web</a>
+                    <a href="glosario.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                        <i class="far fa-file"></i>  Glosario</a>
+
+                </div>
+            </div>
+
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </nav>
+
+                <div class="container texto">
+                    <h2>Spring Framework</h2>
+                    <p>Spring framework es un software libre, desarrollado por la Spring Source, este framework puede ser utilizado en 
+                        contenedores web, dispensando servidores de aplicaciones como JEE (Java Enterprise Edition) y JBoss. Realizar la 
+                        configuración inicial de dicho framework suele ser bastante tedioso por lo que el equipo de Spring lanzó Spring Boot, 
+                        el cual simplifica este proceso de manera significativa.</p>
+                    <p>Este framework nos proporciona varias características entre las que podemos destacar la inyección de dependencias, la 
+                        gestión de transacciones, el soporte para pruebas automatizadas y el soporte orientado a aspectos de programación, <a href="#b1">[1].</a></p>
+                    <p>Spring tiene varios frameworks complementarios que son:</p>
+                    <ul>
+                        <li>
+                            <p><strong>Spring MVC:</strong> Este es utilizado para el desarrollo de aplicaciones web (este es parte e spring 
+                                framework).</p>
+                        </li>
+                        <li>
+                            <p><strong>Spring Security:</strong> Este es utilizado para la inserción de funcionalidades para la autenticación y 
+                                autorización.</p>
+                        </li>
+                        <li>
+                            <p><strong>Spring Data:</strong> Destinado para aplicaciones que utilizan nuevas tecnologías de almacenamiento de 
+                                datos como base de datos y servicios en la nube.</p>
+                        <li>
+                            <p><strong>Spring web Services:</strong> Utilizado para la creación de servicios web basados en SOAP.</p>
+                        </li>
+                        <li>
+                            <p><strong>Spring web Flow:</strong> Este es una extensión de Spring MVC que permite la implementación de flujos 
+                                (Wizards) entre pantallas, <a href="#b2">[2].</a></p>
+                        </li>
+                    </ul>
+                    <p><strong>Historia</strong></p>
+                    <p>Al desarrollador Rod Johnson se le ocurrió la idea de Spring y se empezó a escribir a partir del año 2000.</p>
+                    <p>Dos años más tarde, en 2002, aparece la primera versión de Spring Framework (la versión 0.9) creada por Rob Johnson. Y 
+                        ese mismo año, aparece también el famoso libro “Expert One-on-One J2EE Design and Development” de Rod Johnson. Rod, 
+                        tardó 9 meses en escribirlo.                    </p>
+                    <p>Fue creado gracias a la colaboración de grandes programadores, entre ellos se encuentran como 
+                        principales partícipes y líderes de este proyecto Rod Johnson y Jürgen Hõller. Estos dos desarrolladores, además de otros 
+                        colaboradores que juntando toda su experiencia en el desarrollo de aplicaciones J2EE (Java 2 Enterprise Editions), incluyendo 
+                        EJB (Enterprise JavaBeans), Servlets y JSP (Java Server Pages), lograron combinar dichas herramientas y otras más en un sólo 
+                        paquete, para brindar una estructura más sólida y un mejor soporte para este tipo de aplicaciones, <a href="#b3">[3].</a></p>
+                    <p>En 2003, un año después de la publicación del libro, se creó un equipo de desarrolladores que buscaban extender el 
+                        framework en Sourceforge.Y que publicaron la versión 0.9 (no era la release).</p>
+                    <p>En 2004, fue cuando apareció el primer gran lanzamiento, oficial de Spring la versión 1.0 con la licencia de Apache 2.0.</p>
+                    <p>En 2006, llegó Spring 2.0, tratando de simplificar los archivos de configuración XML y dar soporte a Java 5. En 2007, la 
+                        consultoría que habían creado Interface21, cambia su nombre a SpringSource. Y también, llegó Spring 2.5, que introdujo 
+                        nuevas funciones como las configuraciones de anotación.</p>
+                    <p><strong>Arquitectura de Spring</strong></p>
+                    <p>Spring es un framework modular que cuenta con una arquitectura divida en siete capas o módulos lo cual permite tomar y 
+                        ocupar únicamente las partes que interesen para el proyecto y juntarlas con gran Libertad.</p>
+                    <img src="images/arquitecturaSpring.PNG" width="300" height="300"/>
+                    <p><strong>Spring Core:</strong> Es el componente central del marco Spring, proporciona el contenedor IoC. Hay dos tipos de 
+                        implementaciones del contenedor Spring, a saber, la fábrica Bean y el contexto de la aplicación. La fábrica Bean se 
+                        define mediante la interfaz org.springframework.beans.factory.BeanFactory y actúa como un contenedor para los Bean. 
+                        El contenedor de la fábrica de Bean le permite desacoplar la configuración y especificación de las 
+                        dependencias de la lógica del programa.</p>
+                    <p><strong>Spring AOP:</strong> AOP desglosa los programas en aspectos o preocupaciones. El módulo Spring AOP le permite 
+                        implementar preocupaciones o aspectos en una aplicación Spring en Spring AOP, los aspectos son los beans Spring 
+                        regulares o las clases regulares anotadas con la anotación @Aspect. Estos aspectos ayudan en la gestión de transacciones 
+                        y en el registro y monitoreo de fallas de una aplicación. Por ejemplo, la gestión de transacciones es necesaria en las 
+                        operaciones bancarias, como la transferencia de una cantidad de una cuenta a otra.</p>
+                    <p><strong>Spring ORM:</strong> Se utiliza para acceder a datos de bases de datos en una aplicación. Proporciona API para manipular bases de datos con JDO, Hibernate e iBatis. Spring ORM es 
+                        compatible con DAO, que proporciona una forma conveniente de crear las siguientes soluciones ORM basadas en DAO: Gestión simple de transacciones declarativas, Manejo transparente de excepciones, 
+                        Clases de plantillas ligeras y seguras para subprocesos, Clases de apoyo DAO y Administracion de recursos.</p>
+
+                    <p><strong>Spring Web MVC:</strong> La arquitectura MVC para crear aplicaciones web. Separa el código del modelo y los componentes de vista de una aplicación web. En Spring MVC, cuando se genera 
+                        una solicitud desde el navegador, primero va a la clase DispatcherServlet (controlador frontal), que envía la solicitud a un controlador (clase SimpleFormController o clase 
+                        AbstractWizardformController) utilizando un conjunto de asignaciones de controladores. El controlador extrae y procesa la información incluida en una solicitud y envía el resultado a la clase 
+                        DispatcherServlet en forma de objeto modelo. Finalmente, la clase DispatcherServlet usa clases ViewResolver para enviar los resultados a una vista, que muestra estos resultados a los usuarios.</p>
+
+                    <p><strong>Spring Web Flow, el módulo:</strong> Es una extensión del módulo Spring Web MVC. El marco Spring Web MVC 
+                        proporciona controladores de formulario, como la clase SimpleFormController y la clase AbstractWizardFormController, para 
+                        implementar un flujo de trabajo predefinido. Spring Web Flow ayuda a definir el archivo XML o la clase Java que administra 
+                        el flujo de trabajo entre diferentes páginas de una aplicación web. Spring Web Flow se distribuye por separado.Las 
+                        siguientes son las ventajas de Spring Web Flow:</p>
+                    <ul>
+                        <li><p>El flujo entre las diferentes IU de la aplicación se proporciona claramente definiendo el flujo web en un archivo XML.</p>
+                        </li>
+                        <li>
+                            <p>Las definiciones de flujo web le ayudan a dividir virtualmente una aplicación en diferentes módulos y reutilizar 
+                                estos módulos en múltiples situaciones.</p>
+                        </li>
+                        <li>
+                            <p>El ciclo de vida de Spring Web Flow se puede administrar automáticamente</p>
+                        </li>
+                    </ul>
+                    <p><strong>DAO de Spring Web:</strong> El paquete DAO proporciona soporte DAO mediante el uso de tecnologías de acceso a 
+                        datos como JDBC, Hibernate o JDO. Este módulo introduce una capa de abstracción JDBC al eliminar la necesidad de 
+                        proporcionar codificación JDBC tediosa. También proporciona clases de gestión de transacciones programáticas y 
+                        declarativas. El paquete Spring DAO admite conectividad heterogénea de bases de datos Java y mapeo O / R, lo que ayuda a 
+                        Spring a trabajar con varias tecnologías de acceso a datos.</p>
+                    <p><strong>Contexto de la aplicación Spring:</strong> Se basa en el módulo Core. El contexto de la aplicación 
+                        org.springframework.context.ApplicationContext es una interfaz de BeanFactory. Este módulo deriva su característica del 
+                        paquete org.springframework.beans y también admite funcionalidades como internacionalización (I18N), validación, 
+                        propagación de eventos y carga de recursos. El contexto de la aplicación implementa la interfaz MessageSource y 
+                        proporciona la funcionalidad de mensajería a una aplicación, <a href="#b2">[2].</a></p>
+                    <p><strong>Notaciones principales de Spring</strong></p>
+                    <p><strong>@Required,</strong> esta anotación se aplica principalmente al método “setters” de beans. Esta notación dará a 
+                        entender que una propiedad es requerida, en caso contrario se genera una excepción.</p>
+                    <p><strong>@Autowired,</strong> esta anotación inyecta la dependencia del objeto implícitamente, básicamente podemos decir 
+                        que esta notación crea los lazos entre los distintos elementos.</p>
+                    <p><strong>@Qualifier,</strong> esta anotación se usa junto con @Autowired. Esta notación se utiliza cuando se tiene más de 
+                        un vean del mismo tipo y se desea conectar solo con uno de ellos con una propiedad.</p>
+                    <p><strong>@Configuration,</strong> una clase Java anotada con @Configuration es una configuración en sí misma y tendrá 
+                        métodos para crear instancias y configurar las dependencias.</p>
+
+
+                    <h3>Bibliografía</h3>
+                    <a name="b1"/>
+                    <p>[1]  UnyPaython, Spring Boot, Mexico: https://unipython.com/que-es-el-framework-spring-y-las-ventajas-de-utilizarlo/, 2020.</p>
+                    <a name="b2"/>
+                    <p>[2]	C. Á. Caules, Spring boot, Mexico: https://www.arquitecturajava.com/que-es-spring-boot/, 2021.</p>
+                    
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+                <script>
+                    var el = document.getElementById("wrapper");
+                    var toggleButton = document.getElementById("menu-toggle");
+
+                    toggleButton.onclick = function () {
+                        el.classList.toggle("toggled");
+                    };
+                </script>
+                </body>
+                </html>
